@@ -35,29 +35,6 @@ Where:
 
 So the numeric (octal) representation is: 775
 
-Flowchart for Understanding Permissions
-
-START
-  ↓
-Who is accessing the file?
-  ↓
-┌────────────────────────────┐
-│ Is it the Owner?           │───Yes───> Check Owner's permissions
-│                            │
-│             No             ↓
-│ Is it a Group Member?      │───Yes───> Check Group's permissions
-│                            │
-│             No             ↓
-│ Is it Others?              │───Yes───> Check Others' permissions
-└────────────────────────────┘
-
-Then:
-
-If r → can read
-
-If w → can write
-
-If x → can execute
 
 Apply chmod in a Python Script:
 
